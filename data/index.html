@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JET-X HUD</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>JET-X HUD <span id="rec">&#9679; REC</span></h1>
+    <div class="sat-badge">SAT: <span id="sat">0</span></div>
+  </header>
+
+  <main class="hud-container">
+    <section class="card full speed-card">
+      <div class="label">Vitesse GPS</div>
+      <div class="speedo-box">
+        <div class="speedo-bg"></div>
+        <div class="speedo-fill" id="speedo-gauge"></div>
+        <div class="speedo-val" id="vit">0</div>
+      </div>
+      <div class="speed-unit">km/h</div>
+    </section>
+
+    <section class="card">
+      <div class="label">Puissance</div>
+      <div class="val" id="pwr">0<span class="unit">W</span></div>
+    </section>
+
+    <section class="card compass-card">
+      <div class="label">Cap Magn&eacute;tique</div>
+      <div id="compass">
+        <div class="cardinal n">N</div>
+        <div class="cardinal e">E</div>
+        <div class="cardinal s">S</div>
+        <div class="cardinal o">O</div>
+        <div id="needle"></div>
+      </div>
+      <div id="deg">0&deg;</div>
+    </section>
+
+    <section class="card">
+      <div class="label">Tension (6S)</div>
+      <div class="val" id="volt">0.00<span class="unit">V</span></div>
+    </section>
+
+    <section class="card">
+      <div class="label">Courant</div>
+      <div class="val" id="amp">0.0<span class="unit">A</span></div>
+    </section>
+  </main>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

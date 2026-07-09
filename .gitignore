@@ -1,0 +1,30 @@
+# PlatformIO build output
+.pio/
+.pioenvs/
+.piolibdeps/
+libdeps/
+
+# Local PlatformIO overrides
+platformio_override.ini
+
+# Local configuration / secrets
+include/config.local.h
+.env
+.env.*
+!.env.example
+
+# Editor and IDE local files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.code-workspace
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
