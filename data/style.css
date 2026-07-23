@@ -20,6 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
   margin-bottom: 10px;
   position: relative;
 }
@@ -189,6 +190,24 @@ h1 {
   border-radius: 5px;
   font-size: 0.8rem;
   border: 1px solid #00f2ff;
+  white-space: nowrap;
+}
+
+.files-link {
+  background: #222;
+  border: 1px solid #00f2ff;
+  border-radius: 5px;
+  color: #00f2ff;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.files-link:hover,
+.files-link:focus-visible {
+  background: #00f2ff;
+  color: #050505;
 }
 
 #deg {
